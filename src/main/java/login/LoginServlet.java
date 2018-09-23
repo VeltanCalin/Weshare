@@ -32,7 +32,7 @@ public class LoginServlet extends HttpServlet {
 
             Cookie loginCookie = new Cookie("u", u);
             //setting cookie to expiry in 30 mins
-            loginCookie.setMaxAge(60);
+            loginCookie.setMaxAge(30*60);
             response.addCookie(loginCookie);
             response.sendRedirect("fileupload.jsp");
 
