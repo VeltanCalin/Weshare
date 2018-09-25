@@ -29,6 +29,7 @@ import java.util.TimeZone;
 
     private static final String UPLOAD_DIR = "posters";
 
+    //create a string with date and time for getting files with unique names
     String end = getDate()+ "_" + getTime();
 
     private  final static String getDate(  )   {

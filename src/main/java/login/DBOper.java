@@ -3,7 +3,7 @@ package login;
 import java.sql.*;
 
 public class DBOper {
-    public final static String URL = "jdbc:postgresql://54.93.65.5:5432/calinv8";
+    public final static String URL = "jdbc:postgresql://localhost:5432/calinv8";
     public final static String USERNAME = "fasttrackit_dev";
     public final static String PASSWORD = "fasttrackit_dev";
 
@@ -28,7 +28,7 @@ public class DBOper {
 
             // 6. iterate the result set and print the values
 
-            // BIG HACK, DEMO PURPOSE, BECAUSE I CREATE A DEPENDENCY ON HOW THE IMPLEM IS DONE IN UI
+
 
             while (rs.next()) {
                 found = rs.getInt("id");
@@ -71,7 +71,7 @@ public class DBOper {
 
             // 6. iterate the result set and print the values
 
-            // BIG HACK, DEMO PURPOSE, BECAUSE I CREATE A DEPENDENCY ON HOW THE IMPLEM IS DONE IN UI
+
 
             while (rs.next()) {
                 found = rs.getString("username");
@@ -115,7 +115,7 @@ public class DBOper {
             pSt.setString(1, user);
             pSt.setString(2, pwd);
 
-            int rowsInserted = pSt.executeUpdate();
+
 
             pSt.close();
 
@@ -154,7 +154,7 @@ public class DBOper {
 
 
 
-            int rowsInserted = pSt.executeUpdate();
+           // int rowsInserted = pSt.executeUpdate();
 
             pSt.close();
 
